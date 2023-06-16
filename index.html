@@ -10,7 +10,7 @@
 <body>
     <article>
         <h3>article - 1</h3>
-        <p class="author">Author - 1</p>
+        <p title="I am the most important author" class="author" id="bestSeller">Author - 1</p>
         <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ex, voluptate cum eum dolores autem suscipit obcaecati repellendus corporis fuga eius dignissimos officiis id repudiandae quas laborum! Quidem, labore sunt.</p>
     </article>
     <article class="special">
@@ -44,6 +44,7 @@
             elementH3.style.backgroundColor = 'lime';
             
         }
+        document.getElementById('bestSeller').setAttribute('title','Most important author');
     </script>
 </body>
 </html>
