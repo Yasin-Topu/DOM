@@ -23,5 +23,17 @@
         <p class="author">Author - 3</p>
         <p class="description">Corporis eum aliquam error quod dignissimos magni reiciendis, obcaecati ducimus quae dolor eaque id distinctio esse quo minus totam explicabo, ratione reprehenderit ullam suscipit! Non pariatur eius dicta minus nobis.</p>
     </article>
+    <script>
+        var elementClass = document.getElementsByClassName('author');
+        console.log(elementClass);
+        for(var i =0; i<elementClass.length;i++){
+            console.log(elementClass[i].innerHTML);
+            var inHtml = elementClass[i].innerHTML;
+            inHtml = 'lekhok - '+[i+1]; 
+            elementClass[i].style.backgroundColor = 'red';
+            
+
+        }
+    </script>
 </body>
 </html>
