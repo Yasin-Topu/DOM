@@ -13,26 +13,36 @@
         <p class="author">Author - 1</p>
         <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ex, voluptate cum eum dolores autem suscipit obcaecati repellendus corporis fuga eius dignissimos officiis id repudiandae quas laborum! Quidem, labore sunt.</p>
     </article>
-    <article>
+    <article class="special">
         <h3>article - 2</h3>
         <p class="author">Author - 2</p>
         <p class="description">Repellat ipsam sequi ad pariatur suscipit iure necessitatibus saepe amet recusandae aut quia sunt totam voluptatum ducimus ab ex cum maxime quisquam voluptatem, nesciunt illum perspiciatis. Ducimus nihil voluptate laborum.</p>
     </article>
-    <article>
+    <article class="special">
         <h3>article - 3</h3>
         <p class="author">Author - 3</p>
         <p class="description">Corporis eum aliquam error quod dignissimos magni reiciendis, obcaecati ducimus quae dolor eaque id distinctio esse quo minus totam explicabo, ratione reprehenderit ullam suscipit! Non pariatur eius dicta minus nobis.</p>
     </article>
     <script>
-        var elementClass = document.getElementsByClassName('author');
-        console.log(elementClass);
-        for(var i =0; i<elementClass.length;i++){
-            console.log(elementClass[i].innerHTML);
-            var inHtml = elementClass[i].innerHTML;
-            inHtml = 'lekhok - '+[i+1]; 
-            elementClass[i].style.backgroundColor = 'red';
-            
+        var authors = document.getElementsByClassName('author');
+        console.log(authors);
+         for(var i =0; i<authors.length;i++){
+            var element = authors[i];
+            console.log(element.innerHTML);
+            element.innerHTML = 'lekkhok-'+(i+1);
+            element.style.backgroundColor = 'lightblue';
 
+         }
+           
+
+        var specialH3 = document.querySelectorAll('.special h3');
+        console.log(specialH3);
+        for(var j = 0;j<specialH3.length;j++){
+            var elementH3 = specialH3[j];
+            console.log(elementH3.innerHTML);
+            elementH3.innerHTML = 'uponnash - '+(j+2);
+            elementH3.style.backgroundColor = 'lime';
+            
         }
     </script>
 </body>
